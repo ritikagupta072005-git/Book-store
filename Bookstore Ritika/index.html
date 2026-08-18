@@ -2,15 +2,37 @@
 <html>
 <head>
     <title>Online Book Store</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        #topFrame {
+            height: 20%;
+            width: 100%;
+            border: none;
+        }
+        #container {
+            display: flex;
+            height: 80%;
+        }
+        #leftFrame {
+            width: 25%;
+            border: none;
+        }
+        #rightFrame {
+            flex: 1;
+            border: none;
+        }
+    </style>
 </head>
-<frameset rows="20%,*">
+<body>
+    <iframe src="top.html" id="topFrame" name="topFrame"></iframe>
 
-    <frame src="top.html" name="topFrame" scrolling="no" noresize>
-
-    
-    <frameset cols="25%,*">
-        <frame src="left.html" name="leftFrame">
-        <frame src="right.html" name="rightFrame">
-    </frameset>
-</frameset>
+  
+    <div id="container">
+        <iframe src="left.html" id="leftFrame" name="leftFrame"></iframe>
+        <iframe src="right.html" id="rightFrame" name="rightFrame"></iframe>
+    </div>
+</body>
 </html>
