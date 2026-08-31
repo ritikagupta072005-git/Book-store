@@ -2,43 +2,61 @@
 <html>
 <head>
     <title>Online Book Store</title>
+
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            padding: 0;
             height: 100vh;
         }
-#topFrame {
-    height: 30%;
-    width: 100%;
-    border: 4px solid black;
-    box-sizing: border-box;
-}
 
-#container {
-    display: flex;
-    height: 80%;
-}
+        #topFrame {
+            width: 100%;
+            height: 30vh;
+            border: none;
+            display: block;
+        }
 
-#leftFrame {
-    width: 25%;
-    border: none;
-}
+        #container {
+            display: flex;
+            width: 100%;
+            height: 70vh;
+        }
 
-#rightFrame {
-    width: 75%;
-    border: none;
-}
-        
+        #leftFrame {
+            width: 25%;
+            height: 100%;
+            border: none;
+        }
+
+        #rightFrame {
+            width: 75%;
+            height: 100%;
+            border: none;
+        }
     </style>
 </head>
-<body>
-    <iframe src="top.html" id="topFrame" name="topFrame"></iframe>
 
-  
+<body>
+
+    <iframe src="top.html"
+            id="topFrame"
+            name="topFrame">
+    </iframe>
+
     <div id="container">
-        <iframe src="left.html" id="leftFrame" name="leftFrame"></iframe>
-        <iframe src="right.html" id="rightFrame" name="rightFrame"></iframe>
+
+        <iframe src="left.html"
+                id="leftFrame"
+                name="leftFrame">
+        </iframe>
+
+        <iframe src="right.html"
+                id="rightFrame"
+                name="rightFrame">
+        </iframe>
+
     </div>
+
 </body>
 </html>
