@@ -1,125 +1,214 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+body {
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+}
+
+.form-container {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 70px;
+}
+
+.form-container h2 {
+    color: #0B1F3A;
+}
+
+label {
+    font-size: 17px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 210px;
+    height: 27px;
+}
+
+textarea {
+    font-size: 15px;
+}
+
+select {
+    padding: 5px;
+}
+
+.button {
+    font-size: 17px;
+    padding: 9px 28px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.register-btn {
+    background-color: #0B1F3A;
+    color: white;
+    border: 2px solid #0B1F3A;
+}
+
+.reset-btn {
+    background-color: #D4AF37;
+    color: #0B1F3A;
+    border: 2px solid #0B1F3A;
+}
+
+.footer {
+    position: fixed;
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0B1F3A;
+    text-decoration: none;
+}
+
+</style>
+
+</head>
+
 <body>
 
-    <div align="center">
-        <h2>Registration Page</h2>
+<div class="form-container">
 
-        <form>
+    <h2>Registration Page</h2>
 
-            <label>1. Name:</label>
-            <input type="text" name="name">
-            <br><br>
+    <form>
 
-            <label>2. Password:</label>
-            <input type="password" name="password">
-            <br><br>
+        <label>1. Name:</label>
+        <input type="text" name="name">
+        <br><br>
 
-            <label>3. Email:</label>
-            <input type="email" name="email">
-            <br><br>
+        <label>2. Password:</label>
+        <input type="password" name="password">
+        <br><br>
 
-            <label>4. Phone Number:</label>
-            <textarea name="phone" rows="1" cols="25"></textarea>
-            <br><br>
+        <label>3. Email:</label>
+        <input type="email" name="email">
+        <br><br>
 
-            <label>5. Sex:</label>
-            <input type="radio" name="sex" value="male"> Male
-            <input type="radio" name="sex" value="female"> Female
-            <input type="radio" name="sex" value="other"> Other
-            <br><br>
+        <label>4. Phone Number:</label>
+        <textarea name="phone" rows="1" cols="25"></textarea>
+        <br><br>
 
-            <label>6. Date of Birth:</label>
+        <label>5. Gender:</label>
 
-            <select name="day">
-                <option>Day</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-                <option>11</option>
-                <option>12</option>
-                <option>13</option>
-                <option>14</option>
-                <option>15</option>
-                <option>16</option>
-                <option>17</option>
-                <option>18</option>
-                <option>19</option>
-                <option>20</option>
-                <option>21</option>
-                <option>22</option>
-                <option>23</option>
-                <option>24</option>
-                <option>25</option>
-                <option>26</option>
-                <option>27</option>
-                <option>28</option>
-                <option>29</option>
-                <option>30</option>
-                <option>31</option>
-            </select>
+        <input type="radio" name="gender" value="male"> Male
 
-            <select name="month">
-                <option>Month</option>
-                <option>January</option>
-                <option>February</option>
-                <option>March</option>
-                <option>April</option>
-                <option>May</option>
-                <option>June</option>
-                <option>July</option>
-                <option>August</option>
-                <option>September</option>
-                <option>October</option>
-                <option>November</option>
-                <option>December</option>
-            </select>
+        <input type="radio" name="gender" value="female"> Female
 
-            <select name="year">
-                <option>Year</option>
-                <option>2000</option>
-                <option>2001</option>
-                <option>2002</option>
-                <option>2003</option>
-                <option>2004</option>
-                <option>2005</option>
-                <option>2006</option>
-                <option>2007</option>
-                <option>2008</option>
-                <option>2009</option>
-                <option>2010</option>
-            </select>
+        <input type="radio" name="gender" value="other"> Other
 
-            <br><br>
+        <br><br>
 
-            <label>7. Language Known:</label>
-            <input type="checkbox" name="language" value="English"> English
-            <input type="checkbox" name="language" value="Hindi"> Hindi
-            <input type="checkbox" name="language" value="Tamil"> Tamil
-            <br><br>
+        <label>6. Date of Birth:</label>
 
-            <label>8. Address:</label><br>
-            <textarea name="address" rows="4" cols="40"></textarea>
-            <br><br>
+        <select name="day">
+            <option>Day</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+            <option>27</option>
+            <option>28</option>
+            <option>29</option>
+            <option>30</option>
+            <option>31</option>
+        </select>
 
-            <!-- Buttons -->
-            <input type="submit" value="Register"
-                   style="font-size:16px; padding:8px 25px; font-weight:bold;">
+        <select name="month">
+            <option>Month</option>
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+        </select>
 
-            &nbsp;&nbsp;
+        <select name="year">
+            <option>Year</option>
+            <option>2000</option>
+            <option>2001</option>
+            <option>2002</option>
+            <option>2003</option>
+            <option>2004</option>
+            <option>2005</option>
+            <option>2006</option>
+            <option>2007</option>
+            <option>2008</option>
+            <option>2009</option>
+            <option>2010</option>
+        </select>
 
-            <input type="reset" value="Reset"
-                   style="font-size:16px; padding:8px 25px; font-weight:bold;">
+        <br><br>
 
-        </form>
-    </div>
+        <label>7. Language Known:</label>
+
+        <input type="checkbox" name="language" value="English"> English
+        <input type="checkbox" name="language" value="Hindi"> Hindi
+        <input type="checkbox" name="language" value="Tamil"> Tamil
+
+        <br><br>
+
+        <label>8. Address:</label>
+        <br>
+
+        <textarea name="address" rows="4" cols="40"></textarea>
+
+        <br><br>
+
+        <input type="submit"
+               value="Register"
+               class="button register-btn">
+
+        &nbsp;&nbsp;
+
+        <input type="reset"
+               value="Reset"
+               class="button reset-btn">
+
+    </form>
+
+</div>
+
+<footer class="footer">
+    Name: Ritika Gupta &nbsp; | &nbsp; Roll No.: 2501920110307
+</footer>
 
 </body>
 </html>
